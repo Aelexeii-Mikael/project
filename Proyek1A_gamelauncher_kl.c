@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// protopype atau gambaran main menu mau apa aja
 void mainMenu();
 void snake();
 void ticTacToe();
@@ -9,13 +8,13 @@ void hangman();
 void clearScreen();
 void pauseScreen();
 
-// main menu nya disini 
+
 int main() {
     mainMenu();
     return 0;
 }
 
-// tampilan main menu 
+
 void mainMenu() {
     int choice;
 
@@ -56,7 +55,7 @@ void mainMenu() {
     } while (choice != 4);
 }
 
-// placehplder buat game
+
 void snake() {
     clearScreen();
     printf("Upcoming!\n");
@@ -75,7 +74,6 @@ void hangman() {
     pauseScreen();
 }
 
-// ini buat refresh screen biar uler nanti bis agerak dan hangman gambarnya bisa berubah
 void clearScreen() {
 #ifdef _WIN32
     system("cls");
@@ -84,9 +82,10 @@ void clearScreen() {
 #endif
 }
 
-// ini biar di main menu, prorgam bisa nunggu user milih pilihan 1 - 5
+
 void pauseScreen() {
     printf("\nTekan ENTER untuk kembali ke menu...");
     while (getchar() != '\n');
     getchar();
 }
+
