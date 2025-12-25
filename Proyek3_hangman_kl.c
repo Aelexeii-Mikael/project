@@ -5,7 +5,6 @@
 # include <time.h>
 # include <string.h>
 
-// mendeklarasikan 10 kata yang akan ada di game
 char *words[10] = {
 	"programming",
 	"komputer",
@@ -19,7 +18,6 @@ char *words[10] = {
 	"bola"
 };
 
-// mendefinisikan function hangman
 void displayHangman(int tries) {
 	
 	
@@ -105,7 +103,6 @@ int main () {
 	char guessed[50];
 	int wordlen, tries = 0, i, correctGuess = 0;
 	
-	//algoritma untuk memilih kata random
 	strcpy(word, words[rand()%10]);
 	wordlen = strlen(word);
 	
@@ -156,4 +153,5 @@ int main () {
 }
 
 	return 0;
+
 }
